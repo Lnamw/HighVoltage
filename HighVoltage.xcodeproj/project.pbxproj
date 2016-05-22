@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		AAF77C041CF087E4009408DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF77C031CF087E4009408DA /* main.m */; };
 		AAF77C071CF087E4009408DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF77C061CF087E4009408DA /* AppDelegate.m */; };
-		AAF77C0A1CF087E4009408DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF77C091CF087E4009408DA /* ViewController.m */; };
 		AAF77C0D1CF087E4009408DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF77C0B1CF087E4009408DA /* Main.storyboard */; };
 		AAF77C0F1CF087E4009408DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAF77C0E1CF087E4009408DA /* Assets.xcassets */; };
 		AAF77C121CF087E4009408DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF77C101CF087E4009408DA /* LaunchScreen.storyboard */; };
 		AAF77C1D1CF087E4009408DA /* HighVoltageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF77C1C1CF087E4009408DA /* HighVoltageTests.m */; };
+		AAF77C2A1CF0B1FE009408DA /* ValueTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF77C291CF0B1FE009408DA /* ValueTableViewController.m */; };
+		AAF77C2E1CF0B261009408DA /* ValueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF77C2D1CF0B261009408DA /* ValueCell.m */; };
+		AAF77C351CF0BD46009408DA /* ElectricityClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF77C341CF0BD46009408DA /* ElectricityClass.m */; };
+		AAF77C381CF0C116009408DA /* PopoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF77C371CF0C116009408DA /* PopoverTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +34,6 @@
 		AAF77C031CF087E4009408DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AAF77C051CF087E4009408DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AAF77C061CF087E4009408DA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AAF77C081CF087E4009408DA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AAF77C091CF087E4009408DA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AAF77C0C1CF087E4009408DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAF77C0E1CF087E4009408DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAF77C111CF087E4009408DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +41,14 @@
 		AAF77C181CF087E4009408DA /* HighVoltageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HighVoltageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF77C1C1CF087E4009408DA /* HighVoltageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HighVoltageTests.m; sourceTree = "<group>"; };
 		AAF77C1E1CF087E4009408DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAF77C281CF0B1FE009408DA /* ValueTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueTableViewController.h; sourceTree = "<group>"; };
+		AAF77C291CF0B1FE009408DA /* ValueTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValueTableViewController.m; sourceTree = "<group>"; };
+		AAF77C2C1CF0B261009408DA /* ValueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueCell.h; sourceTree = "<group>"; };
+		AAF77C2D1CF0B261009408DA /* ValueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValueCell.m; sourceTree = "<group>"; };
+		AAF77C331CF0BD46009408DA /* ElectricityClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElectricityClass.h; sourceTree = "<group>"; };
+		AAF77C341CF0BD46009408DA /* ElectricityClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectricityClass.m; sourceTree = "<group>"; };
+		AAF77C361CF0C116009408DA /* PopoverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverTableViewController.h; sourceTree = "<group>"; };
+		AAF77C371CF0C116009408DA /* PopoverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +90,11 @@
 		AAF77C011CF087E4009408DA /* HighVoltage */ = {
 			isa = PBXGroup;
 			children = (
+				AAF77C321CF0BCF7009408DA /* Model */,
+				AAF77C2B1CF0B247009408DA /* Custom Cell */,
+				AAF77C271CF088BC009408DA /* View Controllers */,
 				AAF77C051CF087E4009408DA /* AppDelegate.h */,
 				AAF77C061CF087E4009408DA /* AppDelegate.m */,
-				AAF77C081CF087E4009408DA /* ViewController.h */,
-				AAF77C091CF087E4009408DA /* ViewController.m */,
 				AAF77C0B1CF087E4009408DA /* Main.storyboard */,
 				AAF77C0E1CF087E4009408DA /* Assets.xcassets */,
 				AAF77C101CF087E4009408DA /* LaunchScreen.storyboard */,
@@ -109,6 +119,35 @@
 				AAF77C1E1CF087E4009408DA /* Info.plist */,
 			);
 			path = HighVoltageTests;
+			sourceTree = "<group>";
+		};
+		AAF77C271CF088BC009408DA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AAF77C281CF0B1FE009408DA /* ValueTableViewController.h */,
+				AAF77C291CF0B1FE009408DA /* ValueTableViewController.m */,
+				AAF77C361CF0C116009408DA /* PopoverTableViewController.h */,
+				AAF77C371CF0C116009408DA /* PopoverTableViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AAF77C2B1CF0B247009408DA /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AAF77C2C1CF0B261009408DA /* ValueCell.h */,
+				AAF77C2D1CF0B261009408DA /* ValueCell.m */,
+			);
+			name = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		AAF77C321CF0BCF7009408DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AAF77C331CF0BD46009408DA /* ElectricityClass.h */,
+				AAF77C341CF0BD46009408DA /* ElectricityClass.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,9 +250,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAF77C0A1CF087E4009408DA /* ViewController.m in Sources */,
+				AAF77C351CF0BD46009408DA /* ElectricityClass.m in Sources */,
+				AAF77C381CF0C116009408DA /* PopoverTableViewController.m in Sources */,
 				AAF77C071CF087E4009408DA /* AppDelegate.m in Sources */,
 				AAF77C041CF087E4009408DA /* main.m in Sources */,
+				AAF77C2A1CF0B1FE009408DA /* ValueTableViewController.m in Sources */,
+				AAF77C2E1CF0B261009408DA /* ValueCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
