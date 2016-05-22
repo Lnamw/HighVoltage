@@ -52,9 +52,9 @@
 #pragma mark - TableView Delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-//    if (self.delegate  && [self.delegate respondsToSelector:@selector(valueWasChosen:)]) {
+    if (self.delegate  && [self.delegate respondsToSelector:@selector(valueWasChosen:)]) {
         [self.delegate valueWasChosen:self.electricityArray[indexPath.row]];
-//    }
+    }
 }
 
 

@@ -9,11 +9,14 @@
 #import "ValueTableViewController.h"
 #import "PopoverTableViewController.h"
 #import "ValueCell.h"
+#import "ElectricityClass.h"
 
-@interface ValueTableViewController () <UIPopoverPresentationControllerDelegate, PopoverTableViewControllerDelegate>
+@interface ValueTableViewController () <UIPopoverPresentationControllerDelegate, PopoverTableViewControllerDelegate, UITextFieldDelegate>
 
 @property (nonatomic, strong) NSMutableArray *valueArray;
 @property (nonatomic, strong) NSMutableArray *remainingValueArray;
+@property (nonatomic, copy) NSString *nameValue;
+@property (nonatomic, strong) ElectricityClass *elect;
 
 
 
@@ -25,6 +28,13 @@
     [super viewDidLoad];
 
     self.remainingValueArray = [[NSMutableArray alloc] initWithObjects:@"Ohms", @"Amps", @"Volts", @"Watts", nil];
+
+    self.valueArray = [NSMutableArray array];
+    
+    self.elect = [[ElectricityClass alloc] init];
+    
+    UITapGestureRecognizer *gr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(grTapped:)];
+    [self. view addGestureRecognizer:gr];
 
 
 }
@@ -48,8 +58,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ValueCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ValueCell" forIndexPath:indexPath];
 
-    NSString *name = self.valueArray[indexPath.row];
-    cell.nameLabel.text = name;
+    self.nameValue = self.valueArray[indexPath.row];
+    cell.nameLabel.text = self.nameValue;
     
     
     
@@ -64,6 +74,8 @@
     
     vc.electricityArray = self.remainingValueArray;
     vc.popoverPresentationController.delegate = self;
+    
+    vc.delegate = self;
 
 }
 
@@ -83,7 +95,39 @@
     [self.remainingValueArray removeObjectAtIndex:rowToRemove];
     
     [self.tableView reloadData];
+    
+    if (self.valueArray.count == 2) {
+        UIBarButtonItem *calculate = [[UIBarButtonItem alloc] initWithTitle:@"Calculate" style:UIBarButtonItemStylePlain target:self action:@selector(calculateButtonPressed:)];
+        self.navigationItem.leftBarButtonItem = calculate;
+        self.navigationItem.rightBarButtonItem.enabled = NO;
+    }
 
+}
+
+#pragma mark - Text Field Delegate 
+-(void)textFieldDidEndEditing:(UITextField *)textField {
+    
+    if ([self.nameValue isEqualToString:@"Ohms"]) {
+        self.elect.ohms = textField.text;
+    } else if ([self.nameValue isEqualToString:@"Amps"]) {
+        self.elect.amps = textField.text;
+    } else if ([self.nameValue isEqualToString:@"Volts"]) {
+        self.elect.volts = textField.text;
+    } else if ([self.nameValue isEqualToString:@"Watts"]) {
+        self.elect.watts = textField.text;
+    }
+    
+    NSLog(@"object is %@ %@ %@ %@", self.elect.ohms, self.elect.amps, self.elect.volts, self.elect.watts);
+    
+}
+
+#pragma mark - action Handlers 
+-(void)grTapped:(id)sender {
+    [self.view endEditing:YES];
+}
+
+- (void)calculateButtonPressed:(id)sender {
+    [self.delegate doCalculation:self.elect];
 }
 
 /*

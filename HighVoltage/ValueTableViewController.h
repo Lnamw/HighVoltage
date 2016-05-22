@@ -9,8 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "PopoverTableViewController.h"
 
-@interface ValueTableViewController : UITableViewController <PopoverTableViewControllerDelegate>
+@class ElectricityClass;
 
+@protocol ValueTableViewControllerDelegate <NSObject>
 
+-(ElectricityClass *)doCalculation:(ElectricityClass *)electObject;
+
+@end
+
+@interface ValueTableViewController : UITableViewController
+
+@property (weak, nonatomic) id<ValueTableViewControllerDelegate>delegate;
 
 @end

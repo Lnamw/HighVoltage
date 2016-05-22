@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ValueTableViewController.h"
 
 @protocol PopoverTableViewControllerDelegate <NSObject>
 

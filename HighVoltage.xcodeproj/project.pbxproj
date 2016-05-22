@@ -17,6 +17,7 @@
 		AAF77C2E1CF0B261009408DA /* ValueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF77C2D1CF0B261009408DA /* ValueCell.m */; };
 		AAF77C351CF0BD46009408DA /* ElectricityClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF77C341CF0BD46009408DA /* ElectricityClass.m */; };
 		AAF77C381CF0C116009408DA /* PopoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF77C371CF0C116009408DA /* PopoverTableViewController.m */; };
+		AAF77C3D1CF21F24009408DA /* Calculation.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF77C3C1CF21F24009408DA /* Calculation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		AAF77C341CF0BD46009408DA /* ElectricityClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElectricityClass.m; sourceTree = "<group>"; };
 		AAF77C361CF0C116009408DA /* PopoverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverTableViewController.h; sourceTree = "<group>"; };
 		AAF77C371CF0C116009408DA /* PopoverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverTableViewController.m; sourceTree = "<group>"; };
+		AAF77C3B1CF21F24009408DA /* Calculation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculation.h; sourceTree = "<group>"; };
+		AAF77C3C1CF21F24009408DA /* Calculation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,7 @@
 		AAF77C011CF087E4009408DA /* HighVoltage */ = {
 			isa = PBXGroup;
 			children = (
+				AAF77C3A1CF21EB9009408DA /* Calculation */,
 				AAF77C321CF0BCF7009408DA /* Model */,
 				AAF77C2B1CF0B247009408DA /* Custom Cell */,
 				AAF77C271CF088BC009408DA /* View Controllers */,
@@ -148,6 +152,15 @@
 				AAF77C341CF0BD46009408DA /* ElectricityClass.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		AAF77C3A1CF21EB9009408DA /* Calculation */ = {
+			isa = PBXGroup;
+			children = (
+				AAF77C3B1CF21F24009408DA /* Calculation.h */,
+				AAF77C3C1CF21F24009408DA /* Calculation.m */,
+			);
+			name = Calculation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +266,7 @@
 				AAF77C351CF0BD46009408DA /* ElectricityClass.m in Sources */,
 				AAF77C381CF0C116009408DA /* PopoverTableViewController.m in Sources */,
 				AAF77C071CF087E4009408DA /* AppDelegate.m in Sources */,
+				AAF77C3D1CF21F24009408DA /* Calculation.m in Sources */,
 				AAF77C041CF087E4009408DA /* main.m in Sources */,
 				AAF77C2A1CF0B1FE009408DA /* ValueTableViewController.m in Sources */,
 				AAF77C2E1CF0B261009408DA /* ValueCell.m in Sources */,
